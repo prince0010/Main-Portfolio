@@ -1,0 +1,199 @@
+
+.feature__title{
+    font-size: var(--size-sm);
+    color: var(--clr-orange);
+    font-weight: 500;
+    text-transform: capitalize;
+
+}
+.feature_wrapper{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.feature_link{
+    width: var(--size-2xl) ;
+    height: var(--size-2xl) ;
+}
+.feature__desc{
+    max-width: 60ch;
+    font-size: var(--size-sm);
+    color: var(--clr-state600);
+    /* 1rem (top and bottom) 0 is (right and left) */
+    margin: 1rem 0;
+}
+
+.featured_label{
+ 
+    font-size: var(--size-base);
+    text-transform: capitalize;
+    margin-bottom: 0.25rem;
+}
+.feature_tech-stack{
+    padding: 0;
+}
+.featured_info{
+    font-size: var(--size-sm);
+    color: var(--clr-state600);
+    font-weight: 400;
+    margin-bottom: 0.2em;
+    text-transform: capitalize;
+}
+.feature_info-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem;    
+        
+}
+.feature_info-container div{
+    flex:1;
+    min-width: 250px;
+}
+
+.feature_img-wrapper {
+    position: relative;
+}
+
+.feature_img-wrapper::after{
+    content: '';
+    background-color:  rgba(242, 205, 104, 0.003);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: background-color 0.3s;
+}
+.feature_img-wrapper:hover::after{
+    background-color:   rgba(242, 205, 104, 0.2);
+}
+
+.feature_img-container{
+    /* we will use a grid here not flex since we have multi dimensional(2 or dimensional) for images there is 3 images for horizontal and 3 images for vertical */
+    display: grid;
+    margin-top: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1rem;
+}
+
+
+
+/* Responsive */
+/* xs monitor screen*/
+ @media(min-width: 475px){
+    .feature__title{
+        font-size: var(--size-base);
+        color: var(--clr-orange);
+        font-weight: 500;
+        text-transform: capitalize;
+    }
+
+    .feature__project{
+        font-size: var(--size-3xl);
+        color: var(--color-light);
+    }
+    .feature__desc{
+        font-size: var(--size-base);
+    
+    }
+    .featured_label{
+        font-size: var(--size-lg);
+       
+    }
+  
+    .featured_info{
+        font-size: var(--size-base);
+      
+    }
+    .feature_img-container{
+        margin-top: 1.5rem;
+        grid-gap: 1.5rem;
+    }
+}
+
+
+/* sm monitor screen*/
+@media(min-width: 640px){
+    .feature_img-container{
+        /* when the screensize kay mag 640px na those images withing the feautre_img-contianer ang ma minimum sizes na dayon nila is 500px og ma
+        500 na dayon ang sizes sa images ani na container og pag ma 640px na ang default dayon an size sa images kay 500px na and dili na magbago 
+        unless pag ma resize siya below sa 640px, ma isa isa na dayon ang pics ana which is ang default na sizes pag before sa 640px na screen size and
+        and then the auto-fill in repeat will make the 1fr/225px to stop only in the minimum in the images is 500px so this will make the images
+        into 2 dimensional or 2 lang ka images sa grid na row and ang uban is ma column siya  */
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    }
+    
+}
+/* medium size monitor screen*/
+/* @media(min-width: 768px){ */
+   
+/* } */
+/* large size monitor screen*/
+@media(min-width: 1024px){
+    .feature__title{
+        font-size: var(--size-lg);
+        color: var(--clr-orange);
+        font-weight: 500;
+        text-transform: capitalize;
+    }
+    
+    .feature__project{
+        font-size: var(--size-3xl);
+        color: var(--color-light);
+    }
+    .feature__desc{
+        margin: 1.5rem 0;
+        font-size: var(--size-lg);
+    
+    }
+    .featured_label{
+        font-size: var(--size-xl);
+       
+    }
+  
+    .featured_info{
+        font-size: var(--size-lg);
+      
+    }
+    
+}
+/* extra large size monitor screen*/
+@media(min-width: 1280px){
+    .feature__title{
+        font-size: var(--size-xl);
+        color: var(--clr-orange);
+        font-weight: 500;
+        text-transform: capitalize;
+    }
+    
+    .feature__project{
+        font-size: var(--size-4xl);
+        color: var(--color-light);
+    }
+    .feature__desc{
+        margin: 2rem 0;
+        font-size: var(--size-xl);
+    
+    }
+    .featured_label{
+        font-size: var(--size-3xl);
+       
+    }
+  
+    .featured_info{
+        font-size: var(--size-xl);
+
+      
+    }
+    .feature_img-container{
+        margin-top: 2rem;
+        grid-gap: 2rem;
+    }
+} 
+
+/* 2extra large size monitor screen */
+/* @media(min-width: 1536px){
+   
+} */ 

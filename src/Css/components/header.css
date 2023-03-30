@@ -1,0 +1,101 @@
+.header{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+}
+
+.header_menu{
+    display: none;
+}
+
+.header_bars{
+    display: block;
+    color: var(--clr-light);
+    width: var(--size-2xl);
+    height: var(--size-2xl);
+}
+/* Responsive */
+/* xs monitor screen*/
+/* @media(min-width: 475px){
+    
+}
+/* sm monitor screen*/
+/* @media(min-width: 640px){ */
+    
+    /* } */
+    /* medium size monitor screen*/
+    @media(min-width: 768px){
+        .header_menu{
+            display: flex;
+            align-items: center;
+            list-style: none;
+            padding: 0;
+            gap: 2em;
+        }
+        
+        /* REMEMBER WE ARE BUILDING MOBILE SIZE STYLE FIRST SO THE TEXT MUST BE XS
+        ATO RANANG I CHANGE SA PAG RESPONSIVE NA SO DADTO SA @media MUDAKO OG MAKITA NA ANG
+        MGA LINKS SA NAVBAR LIKE ABOUT, PROJECTS, CONTACTS */
+        .header_links{
+            font-size: var(--size-xs);
+            text-decoration: none;
+            font-weight: 600;
+            color: var(--clr-state600);
+            letter-spacing: -0.01rem;
+            transition: color 0.5s;
+        }
+        
+        .header_links:hover{
+            color: var(--clr-orange);
+        }
+        
+        .header_lines{
+            border: 1px solid var(--clr-state600);
+            padding-top: 1.5em;
+        
+        }
+        .header_li_dk{
+            display: block;
+            color: var(--clr-state600);
+            width: var(--size-base);
+            height: var(--size-base);
+            transition: color 0.5s;
+        }
+        .header_li_dk:hover{
+            color: var(--clr-orange);
+        }
+        .header_resume{
+            font-size: var(--size-xs);
+        }
+        .header_bars{
+            display: none;
+        }
+   
+}
+/* large size monitor screen*/
+/* pag start sa 1024px na size sa monitor ang fontsize sa links kay ma extra small
+and then ang sun na icon kay ma size as extra large and then resume a tag ma extra small
+ */
+@media(min-width: 1024px){
+.header_links{
+    font-size: var(--size-sm);
+}
+.header_li_dk{
+    height: var(--size-xl);
+    width: var(--size-xl);
+}
+.header_resume{
+    font-size: var(--size-sm);
+}
+}   
+/* extra large size monitor screen
+@media(min-width: 1280px){
+    
+} */
+/* 2extra large size monitor screen */
+/* @media(min-width: 1536px){
+   
+} */ 

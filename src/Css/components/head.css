@@ -1,0 +1,134 @@
+.head{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.text2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image_pic{
+    border-radius: 50%;
+    height: 6rem;
+    width: 6rem;
+}
+
+.head_name{
+    font-size: var(--size-sm);
+    color: var( --clr-state800);
+    line-height: 0.5;
+    ;
+}
+
+.head_type{
+    font-size: var(--size-2xl);
+    color: var(--clr-state600);
+    text-transform: uppercase;
+    letter-spacing: -0.010em;
+    line-height: 0.9;
+    margin-top: 1rem
+}
+.head_desc{
+    max-width: 70ch;
+    font-size: var(--size-s);
+    color: var(--clr-state400);
+    margin-top: 1rem
+}
+.head_btn{
+    text-transform: capitalize;
+    font-size: var(--size-sm);
+    margin-top: 1rem;
+}
+
+/* Responsive */
+/* xs monitor screen*/
+ @media(min-width: 475px){
+    .head{
+        gap: 1.5rem;
+    }
+    
+    .image_pic{
+        height: 6.5rem;
+        width: 6.5rem;
+    }
+    
+    .head_name{
+        font-size: var(--size-lg);
+    }
+    
+    .head_type{
+        font-size: var(--size-2xl);
+    }
+    .head_desc{
+        font-size: var(--size-base);
+    }
+    .head_btn{
+        font-size: var(--size-base);
+    }
+    
+}
+/* sm monitor screen*/
+/* @media(min-width: 640px){ */
+  
+/* } */
+/* medium size monitor screen*/
+/* @media(min-width: 768px){ */
+   
+/* } */
+/* large size monitor screen*/
+ @media(min-width: 1024px){
+
+    .image_pic{
+        height: 8rem;
+        width: 8rem;
+    }
+    
+    .head_name{
+        font-size: var(--size-3xl);
+    }
+    
+    .head_type{
+        font-size: var(--size-4xl);
+    }
+    .head_desc{
+        font-size: var(--size-lg);
+    }
+    .head_btn{
+        font-size: var(--size-lg);
+    } 
+    .text{
+        text-align: center;
+    }
+} 
+/* extra large size monitor screen */
+@media(min-width: 1280px){
+    .head{
+        gap: 2rem;
+    }
+    .image_pic{
+        height: 10rem;
+        width: 10rem;
+    }
+    .head_name{
+        font-size: var(--size-3xl);
+    }
+    .head_type{
+        font-size: var(--size-5xl);
+    }
+    .head_desc{
+        font-size: var(--size-lg);
+    }
+    .head_btn{
+        font-size: var(--size-lg);
+    }
+ 
+}
+/* 2extra large size monitor screen */
+/* @media(min-width: 1536px){
+   
+} */ 

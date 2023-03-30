@@ -1,0 +1,244 @@
+.project{
+    text-align: center;
+}
+.project_title_app{
+    font-size: var(--size-base);
+    margin-bottom: 1rem;
+}
+
+.project_desc{
+    max-width: 90ch;
+    color: var(--clr-white);
+    margin: 1rem auto;
+    font-size: var(--size-sm);
+}
+
+.project_img-wrapper {
+    position: relative;
+}
+.project_desc-container:not(:last-child){
+    /* since we don't want to put a margin button on the last project since the spacing must be between the project so on the last project
+    there shouldnt be a marginbottom, our last project is the library web system so we will choose the container of project_desc_first,project_desc_second
+    project_btn, since this 3 classes are inside of the project_desc-container and this is the reason why there's a margin-bottom after each
+    btn class/button tag, so we will append the ':not(:last-child)' pesudo class and the last-child pseudo class is the last container or child
+    in this project_desc-container so basically it will add a margin-bottom:4rem to other elements except sa last-child which is the 
+    Library Web System na ".project_desc-container" container   */
+    margin-bottom: 4rem;
+}
+.project_img-wrapper::after{
+    content: '';
+    background-color:  rgba(242, 205, 104, 0.003);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: background-color 0.3s;
+}
+.project_img-wrapper:hover::after{
+    background-color:  rgba(242, 205, 104, 0.2);
+}
+
+.project_desc_first{
+    font-size: var(--size-sm);
+    color: var(--clr-state600);
+    margin: 1rem 0;
+}
+.project_desc_second{
+    font-size: var(--size-base);
+    color: var(--clr-state400);
+    margin-bottom: 1rem;
+}
+.project_btn{
+    font-size: var(--size-sm);
+}
+.project_subtitle{
+    display: none;
+}
+
+/* Responsive */
+/* xs monitor screen*/
+@media(min-width: 475px){
+    .project_title
+     {
+        font-size: var(--size-2xl);
+    }
+    
+    .project_description{
+        font-size: var(--size-base);
+        margin: 1.5rem auto;
+    }
+    .project_desc_first{
+        font-size: var(--size-base);
+        margin: 1.5rem 0;
+    }
+    .project_desc_second{
+        font-size: var(--size-base);
+        margin-bottom: 1.5rem;
+    }
+    .project_btn{
+        font-size: var(--size-base);
+    }
+}
+/* sm monitor screen*/
+ @media(min-width: 640px){ 
+    .project_desc-container{
+        /* 0 for top and bottom and 1rem(18px) for right and left */
+        padding: 0 1rem;
+    }
+    .project_title_app{
+        display: none;
+    }
+    .projects_container-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+          /*  justify-content: center; + align-items: center; = place-items: center */
+          place-items: center;
+        grid-template-areas: 
+        /* this is the layout of the project section where there is an images and descriptions/ the work_img1-6 and work_content1-6 you will put it in the container class of 
+        Image and the description in it */
+        'image1 content1'
+        'content2 image2'
+        'image3 content3'
+        'content4 image4'
+        'image5 content5'
+        'content6 image6';
+      
+    }
+    /* For Grid-template-areas Image Part*/
+    .work_image1{
+        grid-area: image1;
+    }
+    .work_image2{
+        grid-area: image2;
+    }
+    .work_image3{
+        grid-area: image3;
+    }
+    .work_image4{
+        grid-area: image4;
+    }
+    .work_image5{
+        grid-area: image5;
+    }
+    .work_image6{
+        grid-area: image6;
+    }
+      /* For Grid-template-areas Content Part*/
+
+    .work_content1{
+        grid-area: content1;
+    }
+    .work_content2{
+        grid-area: content2;
+    }
+    .work_content3{
+        grid-area: content3;
+    }
+    .work_content4{
+        grid-area: content4;
+    }
+    .work_content5{
+        grid-area: content5;
+    }
+    .work_content6{
+        grid-area: content6;
+    }
+
+    .project_desc_first{
+        font-size: var(--size-xs);
+        margin: 1em 0;
+    }
+    .project_desc_second{
+        font-size: var(--size-xs);
+        margin-bottom: 1em;
+    }
+    .project_btn{
+        font-size: var(--size-xs);
+    }
+    .project_desc-container:not(:last-child){
+        margin-bottom: 0;
+    }
+    .project_subtitle{
+        display: block;
+        font-size: var(--size-base);
+    }
+   
+ } 
+/* medium size monitor screen*/
+@media(min-width: 768px){ 
+    .project_desc_first{
+        font-size: var(--size-sm);
+    }
+    .project_desc_second{
+        font-size: var(--size-sm);
+    }
+    .project_btn{
+        font-size: var(--size-sm);
+    }
+    .project_subtitle{
+        font-size: var(--size-lg);
+    }
+} 
+/* large size monitor screen*/
+@media(min-width: 1024px){
+    .project_title
+    {
+       font-size: var(--size-2xl);
+   }
+   .project_desc{
+       font-size: var(--size-base);
+   }
+   .project_desc_first{
+    font-size: var(--size-base);
+    }
+    .project_desc_second{
+        font-size: var(--size-base);
+    }
+    .project_btn{
+        font-size: var(--size-base);
+    }
+    .project_subtitle{
+        font-size: var(--size-xl);
+    }
+} 
+/* extra large size monitor screen */
+@media(min-width: 1280px){
+    .project_title
+     {
+        font-size: var(--size-5xl);
+    }
+    .project_desc{
+        font-size: var(--size-base);
+        margin: 2rem auto;
+    }
+    .project_desc_first{
+        font-size: var(--size-sm);
+        }
+        .project_desc_second{
+            font-size: var(--size-sm);
+        }
+        .project_btn{
+            font-size: var(--size-sm);
+        }
+        .project_subtitle{
+            font-size: var(--size-2xl);
+        }
+        .projects_container-wrapper{
+            width: 90%;
+            /*margin: 0 top and bottom auto/auto center left and right */
+            margin: 0 auto;
+        }
+       
+}
+/* 2extra large size monitor screen */
+@media(min-width: 1536px){
+    .projects_container-wrapper{
+        /* so if the screen size 1536px above the width of this projects section will become 70% */
+        width: 70%;
+    }
+  
+    
+    
+}  

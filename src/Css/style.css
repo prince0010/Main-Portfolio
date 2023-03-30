@@ -1,0 +1,74 @@
+/* Color Scheme for the Web */
+:root {
+    --clr-dark:#070a13;
+    --clr-light:#f1f5f9;
+    --clr-state400: #94a3b8;
+    --clr-state600: #475569;
+    --clr-state800: #1e293b;
+    --clr-rose: #e11d48;
+    --clr-orange: #f2cd68;
+
+        /* color converter */
+    /* rose rgb(225, 29, 72) */
+    /* indigo rgb(79, 70, 229) */
+
+    /* Sizes */
+    --size-xxs: 0.5rem;
+    --size-xs: 0.75rem;
+    --size-s: 0.875rem;
+    --size-base:1rem;
+    --size-lg:1.125rem;
+    --size-xl:1.25rem;
+    --size-2xl:1.5rem;
+    --size-3xl:1.875rem;
+    --size-4xl:2.25rem;
+    --size-5xl:3rem;
+    --size-6xl:3.75rem;
+    --size-7xl:4.5rem;
+    --size-8xl:6rem;
+    --size-9xl:8rem;
+    --size-10xl:10rem;
+}
+
+*{
+    margin: 0;
+    /* 0.5rem == 8px */
+    line-height: calc(1em + 0.5rem);
+    /* box-sizing: border-box; */
+}
+
+html{
+    /* this will give scrolling a smooth transition */
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'General Sans', sans-serif;
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+}
+img,
+picture,
+canvas,
+video{
+    /* since its inline we dont use it as a inline those images either way */
+    display: block;
+    max-width: 100%;
+    user-select: none;
+}
+button{
+    padding: 0;
+    display: inline-block;
+    border: none;
+    background: none;
+    cursor:pointer;
+    /* with inherit it will inherit the color of the parent which is in the body css */
+    color: inherit;
+}
+a{
+    color: var(--clr-rose);
+    text-decoration: none;
+}
+strong{
+    color: var(--clr-orange);
+}

@@ -1,0 +1,70 @@
+/* .contact{
+    text-align: center;
+} */
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact_title{
+    font-size: var(--size-2xl);
+    color: var(--clr-light);
+    text-transform: capitalize;
+}
+.contact_desc{
+    max-width: 90ch;
+    font-size: var(--size-sm);
+    color: var(--clr-state600);
+}
+
+/* Responsive */
+/* xs monitor screen*/
+@media(min-width: 475px){
+    .contact{
+        gap: 1.5rem;
+    }
+    .contact_title{
+        font-size: var(--size-3xl);
+    }
+    .contact_desc{
+        font-size: var(--size-base);
+    }
+}
+/* sm monitor screen*/
+/* @media(min-width: 640px){ */
+  
+/* } */
+/* medium size monitor screen*/
+/* @media(min-width: 768px){ */
+   
+/* } */
+/* large size monitor screen*/
+ @media(min-width: 1024px){
+    .contact_title{
+        font-size: var(--size-3xl);
+       
+    }
+    .contact_desc{
+        font-size: var(--size-lg);
+    }
+} 
+/* extra large size monitor screen */
+@media(min-width: 1280px){
+    .contact{
+        gap: 2rem;
+    }
+    .contact_title{
+        font-size: var(--size-4xl);
+    }
+    .contact_desc{
+        font-size: var(--size-xl);
+    }
+}
+/* 2extra large size monitor screen */
+/* @media(min-width: 1536px){
+   
+} */ 

@@ -1,0 +1,117 @@
+
+/* Responsive */
+/* xs monitor screen*/
+/* @media(min-width: 475px){
+   
+}
+/* sm monitor screen*/
+/* @media(min-width: 640px){ */
+  
+/* } */
+/* medium size monitor screen*/
+/* @media(min-width: 768px){ */
+   
+/* } */
+/* large size monitor screen*/
+/* @media(min-width: 1024px){
+  
+} */
+/* extra large size monitor screen
+@media(min-width: 1280px){
+    
+} */
+/* 2extra large size monitor screen */
+/* @media(min-width: 1536px){
+   
+} */ 
+
+.btn{
+    display: inline-block;
+    font-weight: 600;
+    background-color: var(--clr-rose);
+    color: var(--clr-light);
+    text-decoration: none;
+    letter-spacing: -0.05rem;
+    padding: 0.5em 1em;
+    border-radius: 6px;
+    /* 1st is left and right margin (x), 2nd is bottom and top margin(y), the blur of the color*/
+    box-shadow: 0 10px 20px rgba(225, 29, 72, 0.5), 
+    0 6px 6px rgba(225, 29, 72, 0.5), 
+    /* in this part the x margin and y margin are 0 and the third part it is the width of the box-shadow color, its like
+    ga circle ang form sa color and ang 4th part is the -10px and it is the opacity of the 100px na box-shadow color so pag i
+    positive 10 na makita nimo ang color sa rose na naay 100px ang width pero kung -10px mas gigamay ang opacity sa box shadow color */
+    0 0 100px -10px var(--clr-rose);
+    transition: transform .3s, box-shadow 0.3s;
+}
+
+.section{
+    margin-top: 5rem;
+}
+
+.btn:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(225, 29, 72, 0.25), 
+    0 6px 12px rgba(225, 29, 72, 0.25), 
+    0 0 130px -10px var(--clr-orange);
+}
+
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+h2{
+        font-size: var(--size-2xl);
+        color:var(--clr-light);
+}
+
+/* WHEN I CREATE THIS WEBSITE I MAKE IT AS A MOBILE VERSION 1st 
+SO THAT THE RESPONSIVENESS OF MIN-WIDTH WILL BE EFFECTIVE, 
+I DIDNT MAKE IT AS A WEBSITE/FULL SIZE WEB SA PAG DESIGN INSTEAD WHAT
+I DID IS TO MAKE IT AS A MOBILE VERSION SIZE MUNA AND THEN AKONG GI
+RESPONSIVE DITSO BASED SA SIZES xs, s, m, l, xl , 2xl AND DAPAT 
+MIN-WIDTH NA SIYA KUNG MAG RESPONSIVENESS KA GIKAN SA MOBILE VERSION
+NA SIZE SA PAG CREATE NIMOS DESIGNS  */
+/* Responsive */
+/* xs monitor screen*/
+@media(min-width: 475px){
+    .container{
+        max-width: 475px;
+    }
+}
+/* sm monitor screen*/
+@media(min-width: 640px){
+    .container{
+        max-width: 640px;
+    }
+}
+/* medium size monitor screen*/
+@media(min-width: 768px){
+    .container{
+        max-width: 768px;
+    }
+}
+/* large size monitor screen*/
+@media(min-width: 1024px){
+    .container{
+        max-width: 1024px;
+    }
+    .section{
+        margin-top: 10rem;
+    }
+}
+/* extra large size monitor screen*/
+@media(min-width: 1280px){
+    .container{
+        max-width: 1280px;
+    }
+}
+/* 2extra large size monitor screen */
+@media(min-width: 1536px){
+    .container{
+        max-width: 1536px;
+    }
+}
