@@ -11,3 +11,6 @@ import '../Css/components/mobile_nav.css';
 // the utils.css must be the last one since its the most priority of them all or else this css will not work
 import '../Css/utils.css';
 
+import mobileenav from './utils/mobile-nav';
+
+mobileenav();
