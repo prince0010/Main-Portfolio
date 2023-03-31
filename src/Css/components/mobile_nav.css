@@ -1,0 +1,50 @@
+.mobile_nav{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    border: 1px solid green;
+    align-items: center;
+    text-align: center;
+}
+
+.mobile_nav-menu{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+
+}
+.mobile_nav-links{
+    font-size: var(--size-sm);
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.5em;
+    color: var(--clr-state600);
+    transition: color 0.3s;
+
+}
+.mobile_nav-links:hover{
+    color: var(--clr-orange);
+}
+.mobile_nav-links-line{
+    border: 1px solid var(--clr-slate600);
+    padding-right: 1.5rem;
+}
+.mobile_nav-links-sun{
+    /* the sun icon is not centered in the middle of the container because 
+    the sun icon is a button and our button has a default display:inline-block in the utils.css
+    so if we add display block it will center the sun icon, you can look the difference in the
+    developer mode just hover the icon */
+    display: block;
+    width: var(--size-xl);
+    height: var(--size-xl);
+    color: var(--clr-slate600);
+}
