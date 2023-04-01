@@ -24,7 +24,7 @@ headerBtn.addEventListener('click', () => {
         document.body.style.overflowY = 'hidden';    
     }
     else{
-        mobileNav.style.display = 'none';
+        mobileNav.style.display = 'none'; 
         document.body.style.overflowY = 'auto';
     }
 });

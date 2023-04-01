@@ -65,8 +65,16 @@
             height: var(--size-base);
             transition: color 0.5s;
         }
+        .header_li_dk_moon:hover,
         .header_li_dk:hover{
             color: var(--clr-orange);
+        }
+        .header_li_dk_moon{
+            display: none;
+            color: var(--clr-state600);
+            width: var(--size-base);
+            height: var(--size-base);
+            transition: color 0.5s;
         }
         .header_resume{
             font-size: var(--size-xs);
@@ -84,6 +92,7 @@ and then ang sun na icon kay ma size as extra large and then resume a tag ma ext
 .header_links{
     font-size: var(--size-sm);
 }
+.header_li_dk_moon,
 .header_li_dk{
     height: var(--size-xl);
     width: var(--size-xl);

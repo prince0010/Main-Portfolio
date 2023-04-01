@@ -45,6 +45,7 @@ html{
 body{
     font-family: 'General Sans', sans-serif;
     background-color: var(--clr-dark);
+    transition: background-color 0.4s;
     color: var(--clr-light);
 }
 img,
