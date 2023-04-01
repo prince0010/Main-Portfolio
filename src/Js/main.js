@@ -12,5 +12,7 @@ import '../Css/components/mobile_nav.css';
 import '../Css/utils.css';
 
 import mobileenav from './utils/mobile-nav';
+import ThemeMode from './utils/theme';
 
 mobileenav();
+ThemeMode();

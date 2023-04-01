@@ -16,6 +16,8 @@ headerBtn.addEventListener('click', () => {
     // now the isMobileNavOpen is true == !isMobileNavOpen
     isMobileNavOpen = !isMobileNavOpen;
     // console.log(isMobileNavOpen);
+    // if mobileNav is open or clcked then it will change the style of .mobile_nav to display:flex and overflowY: hidden else 
+    // pag wala na click so the mobile_nav display is none or the current defualt display ana sa css sa mobile_nav and the overflowY display is auto 
     if(isMobileNavOpen) {
         //this will set again the mobile_nav when clicked to flex
         mobileNav.style.display = 'flex';
@@ -34,8 +36,10 @@ headerBtn.addEventListener('click', () => {
    
 mobileLinks.forEach(links => {
         links.addEventListener('click', () => {
+            // if clicked a nav_link the ismobileNavOpen will becomne false
             isMobileNavOpen = false;
             mobileNav.style.display = 'none';
+            // this will not make us stuck in the specific section when we click the links so overflowY = auto is to fix the bug stuck in one section
             document.body.style.overflowY = 'auto';
         });
     });

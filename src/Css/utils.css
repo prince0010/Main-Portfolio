@@ -44,6 +44,14 @@
     transition: transform .3s, box-shadow 0.3s;
 }
 
+.light-dark-mode{
+    --clr-light:#070a13;
+    --clr-dark:#f1f5f9;
+    --clr-state400: #1e293b;
+    --clr-state600: #1e293b;
+    --clr-state800: #1e293b;
+}
+
 .section{
     margin-top: 5rem;
 }
