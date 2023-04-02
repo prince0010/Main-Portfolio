@@ -2,6 +2,7 @@
 :root {
     --clr-dark:#070a13;
     --clr-light:#f1f5f9;
+    --clr-state200: #bec7d5;
     --clr-state400: #94a3b8;
     --clr-state600: #475569;
     --clr-state800: #1e293b;
@@ -73,3 +74,17 @@ a{
 strong{
     color: var(--clr-orange);
 }
+
+/* Custom Scrollbar */
+body::-webkit-scrollbar {
+    width: 0.6em;
+  }
+   
+  body::-webkit-scrollbar-track {
+    background-color: #070a13;
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--clr-orange);
+    outline: 1px solid var(--clr-orange);
+  }
