@@ -13,6 +13,8 @@ import '../Css/utils.css';
 
 import mobileenav from './utils/mobile-nav';
 import ThemeMode from './utils/theme';
+import Loaderload from './utils/loader-load';
 
 mobileenav();
 ThemeMode();
+Loaderload();

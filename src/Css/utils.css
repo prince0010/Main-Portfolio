@@ -89,6 +89,21 @@ h2{
         color:var(--clr-light);
 }
 
+
+/* Loader-Loading Blurry Effects */
+
+/* This loading utility class will use when images aren't yet in the viewport */
+    .loading{ 
+    filter: blur(20px) grayscale(100%);
+    }
+/* and once they are in the viewport we will replace the loading utility class to loaded utility class */
+.loaded {
+    filter: blur(0) grayscale(0);
+    transition: 0.7s ease-in-out;
+}
+
+
+
 /* WHEN I CREATE THIS WEBSITE I MAKE IT AS A MOBILE VERSION 1st 
 SO THAT THE RESPONSIVENESS OF MIN-WIDTH WILL BE EFFECTIVE, 
 I DIDNT MAKE IT AS A WEBSITE/FULL SIZE WEB SA PAG DESIGN INSTEAD WHAT

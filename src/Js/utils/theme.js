@@ -35,6 +35,7 @@ const ThemeMode = () => {
     //Default theme is the Darkmode and its classList just open the inspect and look at the Element and Check the body tag if it changes to mainContainer_dark-mode to mainContainer_light-mode
     // so pag open sa web ang mainContainer_dark-mode dapat ang naa sa Element sa body tag sa inspect since its the default one
     document.body.classList.toggle('mainContainer_dark-mode');
+
     
     // The default theme on this one is the dark mode and if the icon clicked then the light theme will be added/changed the css in that one and will craete as a light mode
     document.body.classList.toggle('mainContainer_light-mode');
@@ -53,9 +54,17 @@ const ThemeMode = () => {
         // the key 'theme' and the second is the name of the value 'mainContainer_light-mode' and mainContainer_dark-mode' na gikan sa css 
         // and dapat gamiton ang kato jud dapat gamiton like ani sa css and also mag indicate na kani is lightmode or dark mode and makita na siya sa inspect, adto dayon kas Application and then naay key and value dadto
         localStorage.setItem('theme', 'mainContainer_light-mode');
+        mobile_moonIcon.style.display = 'flex';
+        mobile_sunIcon.style.display = 'none';
+        header_sunIcon.style.display ='none';
+        header_moonIcon.style.display = 'flex';
     }
     else{
         localStorage.setItem('theme','mainContainer_dark-mode');
+        mobile_moonIcon.style.display = 'none';
+        mobile_sunIcon.style.display = 'flex';
+        header_sunIcon.style.display ='flex';
+        header_moonIcon.style.display = 'none';
     }
     
    };
