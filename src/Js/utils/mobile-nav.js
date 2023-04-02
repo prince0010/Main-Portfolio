@@ -11,23 +11,27 @@ const mobileLinks = document.querySelectorAll('.mobile_nav-links');
 //state
 let isMobileNavOpen = false;
 
+// Handler
+const mobileNavToggle = () =>{
+      // now the isMobileNavOpen is true == !isMobileNavOpen
+      isMobileNavOpen = !isMobileNavOpen;
+      // console.log(isMobileNavOpen);
+      // if mobileNav is open or clcked then it will change the style of .mobile_nav to display:flex and overflowY: hidden else 
+      // pag wala na click so the mobile_nav display is none or the current defualt display ana sa css sa mobile_nav and the overflowY display is auto 
+      if(isMobileNavOpen) {
+          //this will set again the mobile_nav when clicked to flex
+          mobileNav.style.display = 'flex';
+          document.body.style.overflowY = 'hidden';    
+      }
+      else{
+          mobileNav.style.display = 'none'; 
+          document.body.style.overflowY = 'auto';
+      }
+}
+
+//Event
 // console.log(isMobileNavOpen);
-headerBtn.addEventListener('click', () => {
-    // now the isMobileNavOpen is true == !isMobileNavOpen
-    isMobileNavOpen = !isMobileNavOpen;
-    // console.log(isMobileNavOpen);
-    // if mobileNav is open or clcked then it will change the style of .mobile_nav to display:flex and overflowY: hidden else 
-    // pag wala na click so the mobile_nav display is none or the current defualt display ana sa css sa mobile_nav and the overflowY display is auto 
-    if(isMobileNavOpen) {
-        //this will set again the mobile_nav when clicked to flex
-        mobileNav.style.display = 'flex';
-        document.body.style.overflowY = 'hidden';    
-    }
-    else{
-        mobileNav.style.display = 'none'; 
-        document.body.style.overflowY = 'auto';
-    }
-});
+headerBtn.addEventListener('click', mobileNavToggle);
 
 
 //If you console.log it you will see that the mobile_nav-links are nodeList which 

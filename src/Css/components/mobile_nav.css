@@ -10,7 +10,7 @@
     background-color: var(--clr-dark);
     transition: background-color 0.4s;
     align-items: center;
-    text-align: center;
+    text-align: center; 
 }
 
 .mobile_nav-menu{
@@ -21,7 +21,6 @@
     justify-content: center;
     align-items: center;
     gap:2rem;
-
 }
 .mobile_nav-links{
     font-size: var(--size-sm);
@@ -30,7 +29,7 @@
     letter-spacing: 0.5em;
     color: var(--clr-state600);
     transition: color 0.3s;
-
+ 
 }
 .mobile_nav-links-sun-moon:hover,
 .mobile_nav-links-sun:hover,
@@ -59,4 +58,13 @@
     height: var(--size-xl);
     color: var(--clr-state600);
     transition: color 0.3s;
+}
+@media(min-width: 768px){
+    .mobile_nav-menu{
+        display: none;
+
+    }
+    .mobile_nav{
+        background-color: transparent;
+    }
 }

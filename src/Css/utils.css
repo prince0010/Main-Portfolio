@@ -29,7 +29,7 @@
     display: inline-block;
     font-weight: 600;
     background-color: var(--clr-rose);
-    color: var(--clr-light);
+    color: #f1f5f9;
     text-decoration: none;
     letter-spacing: -0.05rem;
     padding: 0.5em 1em;
@@ -43,15 +43,28 @@
     0 0 100px -10px var(--clr-rose);
     transition: transform .3s, box-shadow 0.3s;
 }
+/* ================================================== */
 
-.light-dark-mode{
+
+/* ======== Dark and Light Mode Theme ========== */
+.mainContainer_light-mode{
     --clr-light:#070a13;
     --clr-dark:#f1f5f9;
     --clr-state400: #1e293b;
     --clr-state600: #1e293b;
     --clr-state800: #1e293b;
 }
+.mainContainer_dark-mode{
+    --clr-light:#f1f5f9;
+    --clr-dark:#070a13;
+    --clr-state400: #94a3b8;
+    --clr-state600: #475569;
+    --clr-state800: #1e293b;
+}
+/* ======== Dark and Light Mode Theme ========== */
 
+
+/* ================================================== */
 .section{
     margin-top: 5rem;
 }
