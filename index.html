@@ -5,7 +5,9 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,300,600,401,400,700&display=swap" rel="stylesheet">
-    <title>Dev Server</title>
+    <meta name="description" content="Portfolio Website" />
+    <meta name="keywords" content="web design, html, css,js " />
+    <title>Portfolio</title>
   </head>
   
   <body>
@@ -27,13 +29,13 @@
           </li>
           <li class="header_lines"></li>
           <li>
-            <button id = "theme-toggle" class="header_li_dk">
+            <button aria-label="theme-toggle btn" id = "theme-toggle" class="header_li_dk">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
               </svg>
             </button>
             <!-- Moon Icon -->
-            <button id = "theme-toggle" class="header_li_dk_moon">
+            <button aria-label="theme-toggle btn" id = "theme-toggle" class="header_li_dk_moon">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
               </svg>
@@ -44,7 +46,7 @@
             <a class="header_resume btn" href ="/">Resume</a>
           </li>
           </ul>
-          <button class="header_bars">
+          <button aria-label="mobile nav buttton" class="header_bars">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
               <path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm8.25 5.25a.75.75 0 01.75-.75h8.25a.75.75 0 010 1.5H12a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
             </svg>
@@ -68,7 +70,7 @@
              <li class="mobile_nav-links-line" ></li>
             </li>
             <li>
-              <button id = "theme-toggle" class="mobile_nav-links-sun ">
+              <button aria-label="theme-toggle btn" id = "theme-toggle" class="mobile_nav-links-sun ">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
                 </svg>
@@ -78,7 +80,7 @@
               if its darkmode it will change to moon and if its sun it iwll sun icon
               moonIcon.style.display = 'flex' sunIcon.style.display = 'none';, if it's darkmode theme/clicked
               sunIcon.style.display = 'flex',  moonIcon.style.display = 'none' if its clicked/ light Theme-->
-              <button id = "theme-toggle" class="mobile_nav-links-sun-moon">
+              <button aria-label="theme-toggle btn" id = "theme-toggle" class="mobile_nav-links-sun-moon">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
                 </svg>
@@ -170,7 +172,7 @@
       <h3 class="feature__title">Featured Project</h3>
       <div class="feature_wrapper">
         <h2 class="feature__project">Todo-List Web Application</h2>
-        <a href="/" class="feature_link"> 
+        <a aria-label="link feature projects" href="/" class="feature_link"> 
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
           <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
         </svg>
